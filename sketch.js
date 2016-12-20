@@ -27,28 +27,17 @@ function draw() {
     
     var numRaggi = round(map(volume, 0, 1, 0, 32))
     
-    //var numRaggi = 10;
     
     var incr = 360/numRaggi;
         ellipse(0,0,15,15);
 
     
     for(i = 0; i < numRaggi; i++){
-        
-/*        if (i < volume) {
-            stroke(255);
-        } else {
-            stroke(0);
-        }
-        */
           
     rotate(incr);
-    //line(0,0,0,100);
         
-        disegnaFiocco();
+    disegnaFiocco();
     
-    //ellipse(0,0,15,15);
-    //line(0,0,x2,y2);
     }
     
     
