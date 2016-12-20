@@ -25,11 +25,13 @@ function draw() {
     
 
     
-    var numRaggi = round(map(volume, 0, 1, 2, 32))
+    var numRaggi = round(map(volume, 0, 1, 1, 32))
     
     //var numRaggi = 10;
     
     var incr = 360/numRaggi;
+        ellipse(0,0,15,15);
+
     
     for(i = 0; i < numRaggi; i++){
         
@@ -42,6 +44,7 @@ function draw() {
           
     rotate(incr);
     //line(0,0,0,100);
+        
         disegnaFiocco();
     
     //ellipse(0,0,15,15);
@@ -51,10 +54,10 @@ function draw() {
     
     noStroke();
     fill(230);
+    textFont('Roboto Mono');
     textSize(12);
-    text("HAVE A HOLLY JOLLY CHRISTMAS",-100,-220);
-    text("Milan — 2016",-36,220);
-
+    text("Have a Holly Jolly Christmas",-100,-220);
+    text("Milan — 2016",-42,220);
     //rect(-100,-120,198,10)
     
   
@@ -62,7 +65,6 @@ function draw() {
 }
 
 function disegnaFiocco() {
-    ellipse(0,0,15,15);
     line(0,-7.5,0,-130);
     ellipse(0,-137.5,10,10);
     line(0,-45.5,14,-69);
