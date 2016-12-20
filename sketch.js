@@ -25,7 +25,7 @@ function draw() {
     
 
     
-    var numRaggi = round(map(volume, 0, 1, 1, 32))
+    var numRaggi = round(map(volume, 0, 1, 0, 32))
     
     //var numRaggi = 10;
     
